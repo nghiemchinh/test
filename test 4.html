@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test4</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        div {
+            font-size: 30px;
+        }
+
+        h1,
+        .hp {
+            font-family: "Sofia", sans-serif;
+            font-size: 60px;
+            text-shadow: 3px 3px 3px #ababab;
+        }
+
+        .hp:hover {
+            color:
+                crimson;
+        }
+
+        .hp:active {
+            color: blue;
+        }
+
+        .p1 {
+            color: blueviolet;
+            font-size: 40px;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        h3 {
+            color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="javacript/hinh javaccript.jpg" alt="hinh javaccript" width="2100px" height="700px ">
+
+    <div>
+        <h1>JavaScript Operators</h1>
+        <h2>Toán tử số học:</h2>
+        <h3>Phép toán số học:</h3>
+        <h4>phép cộng</h4>
+        <p>x = 5, y = 2, Tổng z= x + y, hiển thị</p>
+        <p id="dmo"></p>
+
+        <script>
+            let x = 5;
+            let y = 2;
+            let z = x + y;
+            document.getElementById("dmo").innerHTML = z;
+        </script>
+        <br>
+
+        <h4>phép trừ</h4>
+        <p>a = 10, b = 5 <br>
+            Tổng c = a - b, hiển thị </p>
+        <p id="dmo2">a - b=</p>
+
+        <script>
+            let a = 10;
+            let b = 5;
+            let c = a - b;
+            document.getElementById("dmo2").innerHTML = c
+        </script>
+
+        <h3>Toán tử với chuỗi:</h3>
+        <p>The + operator concatenates (adds) strings.</p>
+        <p>Toán tử + nối (thêm) các chuỗi.</p>
+        <p id="dem3"></p>
+        <script>
+            let text1 = "Xin";
+            let text2 = "chào";
+            let text3 = text1 + " " + text2;
+            document.getElementById("dem3").innerHTML = text3;
+        </script>
+
+        <h3>Toán tử so sánh:</h3>
+
+    </div>
+
+    <div class="hp">
+        <h1>Events</h1>
+        <button onclick="document.getElementById('demo').innerHTML=Date()" class="p1">The time is?</button>
+
+        <p id="demo"></p>
+    </div>
+    <br>
+    <h2 onclick="this.innerHTML='Xin chào'">click on this text</h2>
+
+    <html>
+
+    <body>
+        <input type="button" id="show-btn" value="Click me" />
+
+        <script language="javascript">
+            // Lấy đối tượng
+            var button = document.getElementById("show-btn");
+
+            // Thêm sự kiện cho đối tượng
+            button.onclick = function () {
+                alert("Bạn vừa click vào button");
+            };
+        </script>
+
+        <html>
+
+        <body>
+            <ul>
+                <li><a href="#" class="show">Tin công nghệ</a></li>
+                <li><a href="#">Tin trong nước</a></li>
+                <li><a href="#" class="show">Tin thời sự</a></li>
+            </ul>
+            <script language="javascript">
+                // Lấy đối tượng
+                var a_list = document.getElementsByClassName("show");
+
+                // Lặp và gán sự kiện
+                for (var i = 0; i < a_list.length; i++) {
+                    a_list[i].onclick = function () {
+                        alert('Xin chào, bạn vừa click vào tôi');
+
+                        // return false để khỏi reload trang
+                        return false
+                    };
+                }
+            </script>
+
+            <script>
+                var a = 5;
+                var b = 6;
+                var c = a + b;
+                alert(c)
+
+            </script>
+        </body>
+
+        </html>
+    </body>
+
+    </html>
+
+</body>
+
+</html>
